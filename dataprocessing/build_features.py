@@ -6,7 +6,7 @@ import logging
 import warnings
 
 # Import configuration variables and helper
-import config
+from . import config
 
 # Ignore SettingWithCopyWarning, use .loc appropriately
 pd.options.mode.chained_assignment = None

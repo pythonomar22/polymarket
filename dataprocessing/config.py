@@ -6,7 +6,7 @@ from datetime import date, time, timedelta
 # --- Essential Paths ---
 # Assumes your scripts are in a directory adjacent to 'binance_market_data'
 # Adjust BASE_DIR if your structure is different
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 RAW_DATA_DIR_BASE = BASE_DIR / "binance_market_data" / "spot" / "daily"
 PROCESSED_DATA_DIR = BASE_DIR / "processed_data"
 
