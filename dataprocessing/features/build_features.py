@@ -4,9 +4,11 @@ import numpy as np
 from pathlib import Path
 import logging
 import warnings
+import sys
 
 # Import configuration variables and helper
-from . import config
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+from dataprocessing import config
 
 # Ignore SettingWithCopyWarning, use .loc appropriately
 pd.options.mode.chained_assignment = None

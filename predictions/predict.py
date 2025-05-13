@@ -12,7 +12,7 @@ sys.path.append(str(Path(__file__).resolve().parent.parent))
 # Import configuration and feature building functions
 from dataprocessing import config
 # We need the feature calculation logic, but applied only to the latest data
-from dataprocessing.build_features import load_processed_data, calculate_features # Reuse feature calculation
+from dataprocessing.features.build_features import load_processed_data, calculate_features # Reuse feature calculation
 
 # --- Logging Setup ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(lineno)d - %(message)s')
